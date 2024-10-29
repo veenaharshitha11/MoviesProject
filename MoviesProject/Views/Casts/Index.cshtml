@@ -1,0 +1,67 @@
+﻿@*Veena Harshitha Gandhe*@
+@model IEnumerable<MoviesProject.Models.Cast>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container main-content">
+    <h1 class="display-4">Cast</h1>
+</div>
+<div class="container mt-1">
+    <p class="add-btn">
+        <a asp-action="Create" class="btn">Add Cast</a>
+    </p>
+    <div>
+        <table class="table table-bordered table-condensed mb-2">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Actor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RolePlayed)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Actor.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RolePlayed)
+            </td>
+            <td>
+                <a class="btn" asp-action="Edit" asp-route-id="@item.CastID">Edit</a> |
+                <a class="btn" asp-action="Details" asp-route-id="@item.CastID">Details</a> |
+                <a class="btn" asp-action="Delete" asp-route-id="@item.CastID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ </div>
+    <div class="buttons-controller d-flex align-items-center mb-4">
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Actors" class="btn">View Actors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Directors" class="btn">View Directors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Movies" class="btn">View Movies</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="StreamingPlatforms" class="btn">View StreamingPlatforms</a>
+        </div>
+    </div>
+</div>

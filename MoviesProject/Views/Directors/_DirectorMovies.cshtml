@@ -1,0 +1,31 @@
+﻿@*Veena Harshitha Gandhe*@
+@model List<Movie>
+<h4>Movies</h4>
+@if (Model.Count > 0)
+{
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Movie Title</th>
+                        <th>Release Date</th>
+                        <th>Genre</th>
+                        <th>Streaming Platform</th>
+                    </tr>
+                </thead>
+                <tbody>
+            @foreach (var e in Model)
+            {
+                            <tr>
+                                <td>@e.Title</td>
+                                <td>@e.ReleaseDate.ToString()</td>
+                                <td>@e.Genre</td>
+                                <td>@e.StreamingPlatform.PlatformName</td>
+                            </tr>
+            }
+                </tbody>
+            </table>
+}
+else
+{
+            <div>No movies to show at this time.</div>
+}

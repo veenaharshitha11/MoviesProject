@@ -1,0 +1,87 @@
+﻿@*Veena Harshitha Gandhe*@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    body {
+        background-color: #f2f2f2;
+    }
+    .main-content{
+        text-decoration:none;
+    }
+    .jumbotron {
+        background-color: #224952;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    .card {
+        border: none;
+        transition: box-shadow 0.3s;
+        margin: 10px;
+    }
+    .card:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+     }
+    .lead-one, .lead-two{
+        font-size: 23px;
+    }
+</style>
+<div class="container main-content mb-5">
+    <h1 class="display-4">Welcome to our Movie Mania!!!</h1>
+</div>
+<div class="container d-flex">
+    <div class="jumbotron d-flex flex-column justify-content-around">
+        <div class="container">
+            <p class="lead-one">
+                Discover the latest movies and their cast on our website.
+                Browse by genre, release date, or director.
+                Each movie listing includes its director, release date, and cast information.
+                Explore our cast pages to learn more about the talented actors who bring these movies to life.
+            </p>
+        </div>
+        <div class="container">
+            <p class="lead-two">Explore our vast collection of movies, directors, and actors</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Movies</h5>
+                        <p class="card-text">Browse our collection of movies and discover new favorites</p>
+                        <a asp-action="Index" asp-controller="Movies" class="btn">View Movies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Directors</h5>
+                        <p class="card-text">Learn about the people behind the movies and their unique vision</p>
+                        <a asp-action="Index" asp-controller="Directors" class="btn">View Directors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Actors</h5>
+                        <p class="card-text">Discover the talented actors who bring your favorite characters to life</p>
+                        <a asp-action="Index" asp-controller="Actors" class="btn">View Actors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Streaming Platforms</h5>
+                        <p class="card-text">Explore the popular streaming platforms that keeps you entertained 24x7</p>
+                        <a asp-action="Index" asp-controller="StreamingPlatforms" class="btn">View Streaming Platforms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

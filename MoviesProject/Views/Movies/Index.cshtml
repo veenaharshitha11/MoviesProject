@@ -1,0 +1,122 @@
+﻿@*Veena Harshitha Gandhe*@
+@model IEnumerable<MoviesProject.Models.Movie>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+     
+    .movie-click{
+        width: 50%;
+        margin: auto;
+    }
+    .exp-movies{
+        width: 55%;
+        margin:auto;
+        font-size:22px;
+    }
+     
+</style>
+<div class="container main-content">
+    <h1 class="display-4">Movies</h1>
+</div>
+<div class="container mt-1">
+    <p class="add-btn">
+        <a asp-action="Create" class="btn">Add Movie</a>
+    </p>
+    <div>
+        <table class="table table-bordered table-condensed mb-2">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Genre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Director)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ReleaseDate)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StreamingPlatform.PlatformName)
+                    </th>
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Genre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Director.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ReleaseDate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StreamingPlatform.PlatformName)
+                        </td>
+                        <td>
+                                <a class="btn" asp-action="Edit" asp-route-id="@item.MovieID">Edit</a> |
+                                <a class="btn" asp-action="Details" asp-route-id="@item.MovieID">Show Cast</a> |
+                                <a class="btn" asp-action="Delete" asp-route-id="@item.MovieID">Delete</a>
+                            
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="buttons-controller d-flex align-items-center mb-4">
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Actors" class="btn">View Actors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Directors" class="btn">View Directors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="StreamingPlatforms" class="btn">View StreamingPlatforms</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Casts" class="btn">View CastInfo</a>
+        </div>
+    </div>
+</div>
+<div class="container movie-click">
+        <div class="col">
+            @if ((List<Movie>)ViewBag.UserMovieClicks != null) {
+                <table class="table table-bordered movie-click">
+                    <thead>
+                        <tr>
+                            <th>
+                                Recently viewed
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var a in
+                       (List<Movie>)ViewBag.UserMovieClicks)
+                        {
+                            <tr><td>@a.Title</td></tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else {
+                <div class="exp-movies alert alert-primary" role="alert">You haven't explored any movies yet!</div>
+            }
+        </div>
+ </div>
+    

@@ -1,0 +1,62 @@
+﻿@*Veena Harshitha Gandhe*@
+@model IEnumerable<MoviesProject.Models.StreamingPlatform>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container main-content">
+    <h1 class="display-4">Streaming Platforms</h1>
+</div>
+<div class="container mt-1">
+    <p class="add-btn">
+        <a asp-action="Create" class="btn">Add Streaming Platform</a>
+    </p>
+    <div>
+<table class="table table-bordered table-condensed mb-2">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlatformName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubscriptionCost)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlatformName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubscriptionCost)
+            </td>
+            <td>
+                <a class="btn" asp-action="Edit" asp-route-id="@item.StreamingPlatformID">Edit</a> |
+                <a class="btn" asp-action="Details" asp-route-id="@item.StreamingPlatformID">Details</a> |
+                <a class="btn" asp-action="Delete" asp-route-id="@item.StreamingPlatformID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
+    <div class="buttons-controller d-flex align-items-center mb-4">
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Movies" class="btn">View Movies</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Actors" class="btn">View Actors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Directors" class="btn">View Directors</a>
+        </div>
+        <div class="m-2">
+            <a asp-action="Index" asp-controller="Casts" class="btn">View CastInfo</a>
+        </div>
+    </div>
+</div>

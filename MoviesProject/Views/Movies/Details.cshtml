@@ -1,0 +1,87 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Movie
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container w-25 mt-5">
+    <h2 class="create-text m-4">Movie Details</h2>
+    <dl class="row">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Director.LastName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.StreamingPlatform)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.StreamingPlatform.PlatformName)
+        </dd>
+    </dl>
+    <div class="row">
+        <div class="col-sm-6">
+            <a asp-action="Index" class="btn">Back to Movies</a>
+        </div>
+        <div class="col-sm-6 text-end">
+            <a asp-action="Edit" class="btn" asp-route-id="@Model?.MovieID">Edit Movie Details</a>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+    <h2 class="create-text m-4">Cast Information</h2>
+
+    @if (Model.Cast.Count > 0)
+    {
+        <table class="table table-bordered table-condensed mb-4">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role Played</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var e in Model.Cast)
+                {
+                    <tr>
+                        <td>@(e.Actor.FirstName + " " + @e.Actor.LastName)</td>
+                        <td>@e.RolePlayed</td>
+                        <td>
+                            <a class="btn" asp-action="Edit" asp-controller="Casts" asp-route-id="@e.CastID">Edit</a> |
+                            <a class="btn" asp-action="Delete" asp-controller="Casts" asp-route-id="@e.CastID">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div>Cast not available for this movie.</div>
+    }
+    
+
+</div>

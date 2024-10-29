@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MoviesProject
+build_property.RootNamespace = MoviesProject
+build_property.ProjectDir = E:\Spring 2023\App Design-Implementation\MoviesProject\MoviesProject\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = E:\Spring 2023\App Design-Implementation\MoviesProject\MoviesProject
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Actors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Actors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Actors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Actors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Actors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Casts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Casts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Casts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Casts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Casts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Directors/_DirectorMovies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlyZWN0b3JzXF9EaXJlY3Rvck1vdmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Movies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Movies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Movies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Movies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/StreamingPlatforms/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RyZWFtaW5nUGxhdGZvcm1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/StreamingPlatforms/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RyZWFtaW5nUGxhdGZvcm1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/StreamingPlatforms/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RyZWFtaW5nUGxhdGZvcm1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/StreamingPlatforms/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RyZWFtaW5nUGxhdGZvcm1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/StreamingPlatforms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RyZWFtaW5nUGxhdGZvcm1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Spring 2023/App Design-Implementation/MoviesProject/MoviesProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-w5t2454y6t

@@ -1,0 +1,35 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.StreamingPlatform
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container w-25 mt-5">
+    <h2 class="create-text m-4">StreamingPlatform Details</h2>
+    <dl class="row">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.PlatformName)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.PlatformName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.SubscriptionCost)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.SubscriptionCost)
+        </dd>
+    </dl>
+    <div class="row">
+        <div class="col-sm-6">
+            <a asp-action="Index" class="btn">Back to Platforms</a>
+        </div>
+        <div class="col-sm-6 text-end">
+            <a asp-action="Edit" class="btn" asp-route-id="@Model?.StreamingPlatformID">Edit</a>
+        </div>
+    </div>
+</div>
+

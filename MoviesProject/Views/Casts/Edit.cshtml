@@ -1,0 +1,45 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Cast
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container w-50 mt-5 add-new">
+    <h2 class="create-text m-4">Edit Cast</h2>
+    <div>
+    <div class="col-md-4"></div>
+        <form asp-action="Edit" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CastID" />
+            <div class="form-group col-md-12">
+                <label asp-for="RolePlayed" class="control-label"></label>
+                <input asp-for="RolePlayed" class="form-control" />
+                <span asp-validation-for="RolePlayed" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="ActorID" class="control-label">Actor</label>
+                <select asp-for="ActorID" class="form-control" asp-items="ViewBag.ActorID"></select>
+                <span asp-validation-for="ActorID" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="MovieID" class="control-label">Movie</label>
+                <select asp-for="MovieID" class="form-control" asp-items="ViewBag.MovieID"></select>
+                <span asp-validation-for="MovieID" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <a asp-action="Index" class="btn">Back to CastInfo</a>
+            </div>
+            <div class="form-group col-md-6 text-end">
+                <input type="submit" value="Save" class="btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

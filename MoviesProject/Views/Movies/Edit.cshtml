@@ -1,0 +1,60 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Movie
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container w-25 mt-5 add-new">
+    <h2 class="create-text m-4">Edit Movie</h2>
+    <div>
+    <div class="col-md-4"></div>
+        <form asp-action="Edit" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MovieID" />
+            <div class="form-group col-md-12">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="Genre" class="control-label"></label>
+                <select asp-for="Genre" class="form-control">
+                    <option value="">Select Genre</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                </select>
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="DirectorID" class="control-label">Director</label>
+                <select asp-for="DirectorID" class="form-control" asp-items="ViewBag.DirectorID"></select>
+                <span asp-validation-for="DirectorID" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="StreamingPlatformID" class="control-label">Streaming Platform</label>
+                <select asp-for="StreamingPlatformID" class="form-control" asp-items="ViewBag.StreamingPlatformID">
+                </select>
+                <span asp-validation-for="StreamingPlatformID" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <a asp-action="Index" class="btn">Back to Movies</a>
+            </div>
+            <div class="form-group col-md-6 text-end">
+                <input type="submit" value="Save" class="btn" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,57 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Movie
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container w-50 mt-5 add-new">
+    <h2 class="create-text m-4">Delete Movie</h2>
+    <h3 class="text-center">Are you sure you want to delete this Movie?</h3>
+    <div class="container w-50 mt-5">
+    <dl class="row">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+            <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+            <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <dt class="col-sm-6">
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+            <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Director.LastName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+            <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.StreamingPlatform)
+        </dt>
+            <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.StreamingPlatform.PlatformName)
+        </dd>
+    </dl>
+
+        <form asp-action="Delete" class="row g-3">
+        <input type="hidden" asp-for="MovieID" />
+            <div class="col-md-6">
+                <a asp-action="Index" class="btn">Back to Movies</a>
+            </div>
+            <div class="col-md-6 text-end">
+                <input type="submit" value="Delete" class="btn" />
+            </div>
+    </form>
+</div>
+</div>

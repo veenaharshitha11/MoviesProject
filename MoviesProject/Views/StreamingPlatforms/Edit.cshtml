@@ -1,0 +1,39 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.StreamingPlatform
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container w-25 mt-5 add-new">
+    <h2 class="create-text m-4">Edit Streaming Platform</h2>
+    <div>
+    <div class="col-md-4"></div>
+        <form asp-action="Edit" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StreamingPlatformID" />
+            <div class="form-group col-md-12">
+                <label asp-for="PlatformName" class="control-label"></label>
+                <input asp-for="PlatformName" class="form-control" />
+                <span asp-validation-for="PlatformName" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="SubscriptionCost" class="control-label"></label>
+                <input asp-for="SubscriptionCost" class="form-control" />
+                <span asp-validation-for="SubscriptionCost" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <a asp-action="Index" class="btn">Back to Platforms</a>
+            </div>
+            <div class="form-group col-md-6 text-end">
+                <input type="submit" value="Save" class="btn" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

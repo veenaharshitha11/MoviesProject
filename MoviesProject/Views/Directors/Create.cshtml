@@ -1,0 +1,88 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Director
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container w-50 mt-5 add-new">
+    <h2 class="create-text m-4">Create Director</h2>
+    <div>
+    <div class="col-md-4"></div>
+        <form asp-action="Create" class="row g-3">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group col-md-6">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="UniversityAttended" class="control-label"></label>
+                <input asp-for="UniversityAttended" class="form-control" />
+                <span asp-validation-for="UniversityAttended" class="text-danger"></span>
+            </div>
+                <div class="form-group col-md-6">
+                <label asp-for="DegreeType" class="control-label"></label>
+                <select asp-for="DegreeType" class="form-control">
+                    <option value="">Select Degree</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Phd">Phd</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="DegreeType" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4">
+                <label asp-for="DateOfBirth" class="control-label"></label>
+                <input asp-for="DateOfBirth" class="form-control" />
+                <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+            </div>
+             <div class="form-group col-md-4">
+                <label asp-for="ContactNumber" class="control-label"></label>
+                <input asp-for="ContactNumber" class="form-control" />
+                <span asp-validation-for="ContactNumber" class="text-danger"></span>
+            </div>
+             <div class="form-group col-md-4">
+                <label asp-for="EmailID" class="control-label"></label>
+                <input asp-for="EmailID" class="form-control" />
+                <span asp-validation-for="EmailID" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-12">
+                <label asp-for="StreetAddress" class="control-label"></label>
+                <input asp-for="StreetAddress" class="form-control" />
+                <span asp-validation-for="StreetAddress" class="text-danger"></span>
+            </div>
+             <div class="form-group col-md-6">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+             <div class="form-group col-md-4">
+                <label asp-for="State" class="control-label"></label>
+                <input asp-for="State" class="form-control" />
+                <span asp-validation-for="State" class="text-danger"></span>
+            </div>
+             <div class="form-group col-md-2">
+                <label asp-for="ZipCode" class="control-label"></label>
+                <input asp-for="ZipCode" class="form-control" />
+                <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+             <div class="col-md-6">
+                    <a asp-action="Index" class="btn">Back to Directors</a>
+                </div>
+            <div class="form-group col-md-6 text-end">
+                <input type="submit" value="Create" class="btn" />
+            </div>
+        </form>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

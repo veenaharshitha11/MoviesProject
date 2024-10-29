@@ -1,0 +1,41 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Cast
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container w-25 mt-5">
+    <h2 class="create-text m-4">Cast Details</h2>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.RolePlayed)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.RolePlayed)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Actor)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Actor.LastName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Movie)
+        </dt>
+        <dd class="col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Movie.Title)
+        </dd>
+    </dl>
+    <div class="row">
+        <div class="col-sm-6">
+            <a asp-action="Index" class="btn">Back to CastInfo</a>
+        </div>
+        <div class="col-sm-6 text-end">
+            <a asp-action="Edit" class="btn" asp-route-id="@Model?.CastID">Edit</a>
+        </div>
+    </div>
+</div>

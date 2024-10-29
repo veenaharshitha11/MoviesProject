@@ -1,0 +1,44 @@
+﻿@*Veena Harshitha Gandhe*@
+@model MoviesProject.Models.Cast
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container w-50 mt-5 add-new">
+<h2 class="create-text m-4">Delete CastInfo</h2>
+<h3 class="text-center">Are you sure you want to delete this Cast Info?</h3>
+    <div class="container w-50 mt-5">
+    <dl class="row">
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.RolePlayed)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.RolePlayed)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Actor)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Actor.LastName)
+        </dd>
+        <dt class = "col-sm-6">
+            @Html.DisplayNameFor(model => model.Movie)
+        </dt>
+        <dd class = "col-sm-6 text-end">
+            @Html.DisplayFor(model => model.Movie.Title)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete" class="row g-3">
+        <input type="hidden" asp-for="CastID" />
+            <div class="col-md-6">
+                <a asp-action="Index" class="btn">Back to CastInfo</a>
+                </div>
+            <div class="col-md-6 text-end">
+                <input type="submit" value="Delete" class="btn" />
+            </div>
+    </form>
+</div>
+</div>
